@@ -1,1 +1,21 @@
+BFS - gives length of shortest path (number of edges needed) to all vertices from a given vertex and the path itself (get by traversing backwards through the parent dictionary)
+It traverses breadth wise (all nodes of a level are visited before going to the next level)
+Uses queues.
 
+DFS - Traverses a path entirely, reaches the end and then backtracks to the closest unexplored path.
+Does not give shortest path (number of edges)
+Implicitly uses stack (is recursive).
+
+Topo sort DAG - Gives one of the possible sequences of completing a set of dependent tasks represented by the DAG.
+
+Longest path DAG - Gives the minimum number of days needed to complete all tasks, if any number of tasks (having no dependencies) can be done one the same day and every task takes 1 day.
+
+Bellman Ford - Gives shortest weighted path from a node to all nodes (negative edges allowed).
+Dijkstra's can be faster, but doesn't allow -ve edges.
+Can detect -ve cycles by checking if anything changed between the nth and (n+1)th iteration.
+
+Floyd Warshall - Gives the shortest path between all pairs of vertices (negative edges allowed)
+Can detect a -ve cycle if S[i, i] is not infinity.
+
+Kruskal's - Gives all edges that will be there in the minimum cost spanning tree of a weighted graph.
+Same complexity as Prim's, might give a different MCST if there are repeated edge weights.
