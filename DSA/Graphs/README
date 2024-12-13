@@ -19,3 +19,6 @@ Can detect a -ve cycle if S[i, i] is not infinity.
 
 Kruskal's - Gives all edges that will be there in the minimum cost spanning tree of a weighted graph.
 Same complexity as Prim's, might give a different MCST if there are repeated edge weights.
+
+All paths from source to destination - Didn't teach in PDSA, so don't know much theory.
+Found it in a Q of PDSA, so I put it here because it looked similar to the code I found while self-learning graphs.
