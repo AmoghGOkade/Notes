@@ -1,1 +1,3 @@
-
+delete() has bugs
+If you insert 10, 20, 30, 40, 50, 25 and then delete 50, 40, 10, no rebalance happens after deleting 40 even though tree is unbalanced.
+Likely because height is not being updated in the right places in the delete() function.
