@@ -1,0 +1,36 @@
+Inserting:-
+l.append(item) -> O(1),  adds 'item' to the end of the list
+l.insert(ind, item) -> O(n),  adds 'item' as index 'ind' (shifts towards the right). Adds at the end if index is more.
+
+Removing:-
+l.pop() -> O(1),  removes and returns last element in the list. Can give IndexError.
+l.pop(ind) -> O(n),  removes element at index 'ind'. Can give IndexError.
+l.remove(item) -> O(n),  removes 1st occurrence of 'item' from the list. ValueError if not present.
+
+Finding/ Counting/ Containment:-
+l.index(item) -> returns the index of the 1st occurrence of 'item'. ValueError if not present.
+l.count(item) -> counts the number of occurrences of 'item'. 0 if not present.
+'item' in l -> O(n),  returns True/False
+
+Sorting:-
+l.sort() -> O(n logn),  ascending order
+l.sort(reverse=True) -> O(n logn),  desscending order
+
+Length:-
+len(l) -> O(1),  returns length of the list
+
+Accessing:-
+l[i] -> O(1),  returns element at index i
+
+Slicing:-
+l[i:j:step] -> returns a list having elements of list l, with indices counted from [i, j-1] in steps of 'step'
+Not entering any parameter just mens default (start, end, 1). Eg:- l[3::] - indices {3, 4, 5, ... n-1}
+
+Reversing:-
+l[::-1] -> O(n),  returns a reversed list
+l.reverse() -> O(n),  returns a reversed list
+
+Arithmetic:-
+min(l) -> O(n),  minimum element in l
+max(l) -> O(n),  maximum element in l
+sum(l) -> O(n),  sum of all elements in l
