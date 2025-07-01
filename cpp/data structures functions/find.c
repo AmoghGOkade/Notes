@@ -4,7 +4,7 @@ M1:- if (find(v.begin(), v.end(), elem) == v.end()) cout<<"Not found\n";
 M2:- auto it = find(v.begin(), v.end(), elem);
 if (it != v.end()) cout<<"Found at index " << distance(v.begin(), it);
 
-//Map (both):-
+//Map (both):- O(1) (average)
 if (m.find(elem) == m.end()) cout<<"Not found\n";
 
 //String:-
